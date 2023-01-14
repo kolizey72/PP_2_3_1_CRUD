@@ -1,8 +1,8 @@
 package crud.repository;
 
 import crud.model.User;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

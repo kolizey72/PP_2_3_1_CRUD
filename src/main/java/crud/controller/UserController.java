@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/users")
 public class UserController {
 
     private final UserService userService;
@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/new")
-    public String createUserPage() {
+    public String createUserPage(@ModelAttribute("user") User user) {
         return "new";
     }
 
